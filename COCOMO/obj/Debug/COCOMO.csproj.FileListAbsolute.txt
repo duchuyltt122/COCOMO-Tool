@@ -1,0 +1,13 @@
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\COCOMO.exe.config
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\COCOMO.exe
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\COCOMO.pdb
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.AssemblyReference.cache
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.SuggestedBindingRedirects.cache
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.Form1.resources
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.Properties.Resources.resources
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.GenerateResource.cache
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.CoreCompileInputs.cache
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.CopyComplete
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.exe
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.pdb
