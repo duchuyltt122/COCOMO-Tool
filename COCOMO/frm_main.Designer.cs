@@ -1,6 +1,6 @@
 ﻿namespace COCOMO
 {
-    partial class frm_main
+    partial class frm_cocomo1
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_export = new RJCodeAdvance.RJControls.RJButton();
             this.txt_cost = new System.Windows.Forms.TextBox();
             this.txt_schedule = new System.Windows.Forms.TextBox();
             this.txt_eaf = new System.Windows.Forms.TextBox();
@@ -140,7 +141,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1080, 856);
+            this.panel1.Size = new System.Drawing.Size(1080, 788);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -227,6 +228,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGreen;
+            this.panel2.Controls.Add(this.btn_export);
             this.panel2.Controls.Add(this.txt_cost);
             this.panel2.Controls.Add(this.txt_schedule);
             this.panel2.Controls.Add(this.txt_eaf);
@@ -239,10 +241,30 @@
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 645);
+            this.panel2.Location = new System.Drawing.Point(0, 613);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1080, 211);
+            this.panel2.Size = new System.Drawing.Size(1080, 175);
             this.panel2.TabIndex = 43;
+            // 
+            // btn_export
+            // 
+            this.btn_export.BackColor = System.Drawing.Color.Violet;
+            this.btn_export.BackgroundColor = System.Drawing.Color.Violet;
+            this.btn_export.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_export.BorderRadius = 1;
+            this.btn_export.BorderSize = 1;
+            this.btn_export.FlatAppearance.BorderSize = 0;
+            this.btn_export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_export.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_export.ForeColor = System.Drawing.Color.White;
+            this.btn_export.Location = new System.Drawing.Point(604, 99);
+            this.btn_export.Name = "btn_export";
+            this.btn_export.Size = new System.Drawing.Size(150, 40);
+            this.btn_export.TabIndex = 47;
+            this.btn_export.Text = "Export Excel File";
+            this.btn_export.TextColor = System.Drawing.Color.White;
+            this.btn_export.UseVisualStyleBackColor = false;
+            this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
             // 
             // txt_cost
             // 
@@ -765,9 +787,9 @@
             this.label1.ForeColor = System.Drawing.Color.Fuchsia;
             this.label1.Location = new System.Drawing.Point(313, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 29);
+            this.label1.Size = new System.Drawing.Size(453, 29);
             this.label1.TabIndex = 26;
-            this.label1.Text = "COCOMO (Constructive Cost Model)";
+            this.label1.Text = "COCOMO I (Constructive Cost Model)";
             // 
             // btn_cal
             // 
@@ -780,7 +802,7 @@
             this.btn_cal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cal.ForeColor = System.Drawing.Color.White;
-            this.btn_cal.Location = new System.Drawing.Point(433, 562);
+            this.btn_cal.Location = new System.Drawing.Point(466, 565);
             this.btn_cal.Name = "btn_cal";
             this.btn_cal.Size = new System.Drawing.Size(150, 40);
             this.btn_cal.TabIndex = 5;
@@ -789,15 +811,18 @@
             this.btn_cal.UseVisualStyleBackColor = false;
             this.btn_cal.Click += new System.EventHandler(this.btn_cal_Click);
             // 
-            // frm_main
+            // frm_cocomo1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 856);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1080, 788);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
-            this.Name = "frm_main";
-            this.Text = "COCOMO";
+            this.Name = "frm_cocomo1";
+            this.Text = "COCOMO I";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_cocomo1_FormClosing);
+            this.Load += new System.EventHandler(this.frm_main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -868,6 +893,7 @@
         private System.Windows.Forms.RadioButton radio_emb;
         private System.Windows.Forms.RadioButton radio_semi;
         private System.Windows.Forms.RadioButton radio_org;
+        private RJCodeAdvance.RJControls.RJButton btn_export;
     }
 }
 

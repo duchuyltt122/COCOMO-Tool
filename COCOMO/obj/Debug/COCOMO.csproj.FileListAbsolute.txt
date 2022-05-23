@@ -10,4 +10,9 @@ C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.CoreCompile
 C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.CopyComplete
 C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.exe
 C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.pdb
-C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.frm_main.resources
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\bin\Debug\GemBox.Spreadsheet.xml
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.frm_cocomo2.resources
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.frm_cocomo1.resources
+C:\Users\TechCare\source\repos\COCOMO\COCOMO\obj\Debug\COCOMO.frm_mainn.resources
