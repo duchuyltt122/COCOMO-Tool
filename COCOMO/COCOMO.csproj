@@ -67,11 +67,11 @@
     <Compile Include="frml_cocomo2.Designer.cs">
       <DependentUpon>frml_cocomo2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_main.cs">
+    <Compile Include="frm_cocomo1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_main.Designer.cs">
-      <DependentUpon>frm_main.cs</DependentUpon>
+    <Compile Include="frm_cocomo1.Designer.cs">
+      <DependentUpon>frm_cocomo1.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_mainn.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="frml_cocomo2.resx">
       <DependentUpon>frml_cocomo2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_main.resx">
-      <DependentUpon>frm_main.cs</DependentUpon>
+    <EmbeddedResource Include="frm_cocomo1.resx">
+      <DependentUpon>frm_cocomo1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mainn.resx">
       <DependentUpon>frm_mainn.cs</DependentUpon>
