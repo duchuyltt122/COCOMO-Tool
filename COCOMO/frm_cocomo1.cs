@@ -307,9 +307,19 @@ namespace COCOMO
 
         private void frm_cocomo1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frm_mainn main=new frm_mainn();
-            main.Show();
+            //frm_mainn main=new frm_mainn();
+            //main.Show();
             
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure want to close the current form?", "Close form", MessageBoxButtons.YesNo);
+
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void frm_main_Load(object sender, EventArgs e)

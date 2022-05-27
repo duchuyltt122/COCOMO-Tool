@@ -114,6 +114,7 @@ namespace COCOMO
                 {
                     lbl_pageTitle.Text = "Home";
                     pnl_main.Controls.Clear();
+                    DisableButton();
                 };
 
                 cocomo1.TopLevel = false;
@@ -160,6 +161,7 @@ namespace COCOMO
                 {
                     lbl_pageTitle.Text = "Home";
                     pnl_main.Controls.Clear();
+                    DisableButton();
                 };
 
                 cocomo2.TopLevel = false;
