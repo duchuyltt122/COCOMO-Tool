@@ -38,9 +38,11 @@ namespace COCOMO
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_main = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_titleBar = new System.Windows.Forms.Panel();
+            this.lbl_pageTitle = new System.Windows.Forms.Label();
             this.pnl_menu.SuspendLayout();
             this.pnl_logo.SuspendLayout();
+            this.pnl_titleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_menu
@@ -54,7 +56,7 @@ namespace COCOMO
             this.pnl_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_menu.Location = new System.Drawing.Point(0, 0);
             this.pnl_menu.Name = "pnl_menu";
-            this.pnl_menu.Size = new System.Drawing.Size(226, 715);
+            this.pnl_menu.Size = new System.Drawing.Size(220, 701);
             this.pnl_menu.TabIndex = 0;
             // 
             // btn_exit
@@ -66,10 +68,10 @@ namespace COCOMO
             this.btn_exit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(0, 655);
+            this.btn_exit.Location = new System.Drawing.Point(0, 641);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_exit.Size = new System.Drawing.Size(226, 60);
+            this.btn_exit.Size = new System.Drawing.Size(220, 60);
             this.btn_exit.TabIndex = 5;
             this.btn_exit.Text = "    Exit";
             this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -89,7 +91,7 @@ namespace COCOMO
             this.btn_manual.Location = new System.Drawing.Point(0, 200);
             this.btn_manual.Name = "btn_manual";
             this.btn_manual.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_manual.Size = new System.Drawing.Size(226, 60);
+            this.btn_manual.Size = new System.Drawing.Size(220, 60);
             this.btn_manual.TabIndex = 4;
             this.btn_manual.Text = "  Manual";
             this.btn_manual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,7 +111,7 @@ namespace COCOMO
             this.btn_cocomo2.Location = new System.Drawing.Point(0, 140);
             this.btn_cocomo2.Name = "btn_cocomo2";
             this.btn_cocomo2.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_cocomo2.Size = new System.Drawing.Size(226, 60);
+            this.btn_cocomo2.Size = new System.Drawing.Size(220, 60);
             this.btn_cocomo2.TabIndex = 3;
             this.btn_cocomo2.Text = "   Cocomo II";
             this.btn_cocomo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,7 +131,7 @@ namespace COCOMO
             this.btn_cocomo1.Location = new System.Drawing.Point(0, 80);
             this.btn_cocomo1.Name = "btn_cocomo1";
             this.btn_cocomo1.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_cocomo1.Size = new System.Drawing.Size(226, 60);
+            this.btn_cocomo1.Size = new System.Drawing.Size(220, 60);
             this.btn_cocomo1.TabIndex = 2;
             this.btn_cocomo1.Text = "    Cocomo I";
             this.btn_cocomo1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,7 +146,7 @@ namespace COCOMO
             this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_logo.Location = new System.Drawing.Point(0, 0);
             this.pnl_logo.Name = "pnl_logo";
-            this.pnl_logo.Size = new System.Drawing.Size(226, 80);
+            this.pnl_logo.Size = new System.Drawing.Size(220, 80);
             this.pnl_logo.TabIndex = 1;
             // 
             // label1
@@ -160,19 +162,33 @@ namespace COCOMO
             // 
             // pnl_main
             // 
-            this.pnl_main.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnl_main.Location = new System.Drawing.Point(226, 80);
+            this.pnl_main.BackColor = System.Drawing.Color.White;
+            this.pnl_main.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_main.Location = new System.Drawing.Point(220, 80);
             this.pnl_main.Name = "pnl_main";
-            this.pnl_main.Size = new System.Drawing.Size(784, 635);
+            this.pnl_main.Size = new System.Drawing.Size(790, 621);
             this.pnl_main.TabIndex = 1;
             // 
-            // panel1
+            // pnl_titleBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel1.Location = new System.Drawing.Point(226, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 80);
-            this.panel1.TabIndex = 2;
+            this.pnl_titleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(135)))));
+            this.pnl_titleBar.Controls.Add(this.lbl_pageTitle);
+            this.pnl_titleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_titleBar.Location = new System.Drawing.Point(220, 0);
+            this.pnl_titleBar.Name = "pnl_titleBar";
+            this.pnl_titleBar.Size = new System.Drawing.Size(790, 80);
+            this.pnl_titleBar.TabIndex = 2;
+            // 
+            // lbl_pageTitle
+            // 
+            this.lbl_pageTitle.AutoSize = true;
+            this.lbl_pageTitle.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pageTitle.ForeColor = System.Drawing.Color.White;
+            this.lbl_pageTitle.Location = new System.Drawing.Point(339, 19);
+            this.lbl_pageTitle.Name = "lbl_pageTitle";
+            this.lbl_pageTitle.Size = new System.Drawing.Size(110, 42);
+            this.lbl_pageTitle.TabIndex = 1;
+            this.lbl_pageTitle.Text = "Home";
             // 
             // frm_homepage
             // 
@@ -180,8 +196,8 @@ namespace COCOMO
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1010, 715);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1010, 701);
+            this.Controls.Add(this.pnl_titleBar);
             this.Controls.Add(this.pnl_main);
             this.Controls.Add(this.pnl_menu);
             this.MaximizeBox = false;
@@ -191,6 +207,8 @@ namespace COCOMO
             this.pnl_menu.ResumeLayout(false);
             this.pnl_logo.ResumeLayout(false);
             this.pnl_logo.PerformLayout();
+            this.pnl_titleBar.ResumeLayout(false);
+            this.pnl_titleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -205,6 +223,7 @@ namespace COCOMO
         private System.Windows.Forms.Button btn_cocomo2;
         private System.Windows.Forms.Panel pnl_main;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_titleBar;
+        private System.Windows.Forms.Label lbl_pageTitle;
     }
 }

@@ -249,6 +249,12 @@ namespace COCOMO
             
         }
 
+        private void frm_cocomo2_Load(object sender, EventArgs e)
+        {
+            //Turn off form border
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
+
         void calScaleExponent()
         {
             double result = 0;

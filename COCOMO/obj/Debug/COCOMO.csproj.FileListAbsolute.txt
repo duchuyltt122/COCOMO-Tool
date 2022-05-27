@@ -34,4 +34,3 @@ C:\Users\Casca\Desktop\COCOMO-Tool-master\COCOMO\obj\Debug\COCOMO.csproj.CopyCom
 C:\Users\Casca\Desktop\COCOMO-Tool-master\COCOMO\obj\Debug\COCOMO.exe
 C:\Users\Casca\Desktop\COCOMO-Tool-master\COCOMO\obj\Debug\COCOMO.pdb
 C:\Users\Casca\Desktop\COCOMO-Tool-master\COCOMO\obj\Debug\COCOMO.frm_welcome.resources
-C:\Users\Casca\Desktop\COCOMO-Tool-master\COCOMO\obj\Debug\COCOMO.csprojAssemblyReference.cache

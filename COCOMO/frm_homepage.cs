@@ -54,6 +54,8 @@ namespace COCOMO
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Times New Roman", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    pnl_titleBar.BackColor = color;
+                    pnl_logo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                 }
             }
         }
@@ -71,31 +73,134 @@ namespace COCOMO
             }
         }
 
+        private void deletePanelControls()
+        {
+            foreach (Control c in pnl_main.Controls)
+                c.Dispose();
+        }
+
         private void btn_cocomo1_Click(object sender, EventArgs e)
         {
-            //frm_cocomo1 cocomo1 = new frm_cocomo1();
+            FormCollection fc = Application.OpenForms;
+            bool createForm = true;
+            bool openForm = false;
 
-            //cocomo1.TopLevel = false;
-            //cocomo1.Dock = DockStyle.Fill;
-            //pnl_main.Controls.Add(cocomo1);
-            //cocomo1.Show();
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "frm_cocomo1")
+                {
+                    openForm = true;
+                }
 
-            ActivateButton(sender);
+                if (frm.Name == "frm_cocomo2")
+                {
+                    DialogResult dr = MessageBox.Show("Are you sure want to close the current form?", "Close form", MessageBoxButtons.YesNo);
+
+                    if (dr == DialogResult.No)
+                    {
+                        createForm = false;
+                    }
+                }
+            }
+
+            if(createForm && !openForm)
+            {
+                deletePanelControls();
+
+                frm_cocomo1 cocomo1 = new frm_cocomo1();
+
+                lbl_pageTitle.Text = "Cocomo I";
+                cocomo1.Closed += (s, args) =>
+                {
+                    lbl_pageTitle.Text = "Home";
+                    pnl_main.Controls.Clear();
+                };
+
+                cocomo1.TopLevel = false;
+                cocomo1.Dock = DockStyle.Fill;
+                pnl_main.Controls.Add(cocomo1);
+                cocomo1.Show();
+
+                ActivateButton(sender);
+            }
         }
 
         private void btn_cocomo2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            FormCollection fc = Application.OpenForms;
+            bool createForm = true;
+            bool openForm = false;
+
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "frm_cocomo2")
+                {
+                    openForm = true;
+                }
+
+                if (frm.Name == "frm_cocomo1")
+                {
+                    DialogResult dr = MessageBox.Show("Are you sure want to close the current form?", "Close form", MessageBoxButtons.YesNo);
+
+                    if (dr == DialogResult.No)
+                    {
+                        createForm = false;
+                    }
+                }
+            }
+
+            if(createForm && !openForm)
+            {
+                deletePanelControls();
+
+                frm_cocomo2 cocomo2 = new frm_cocomo2();
+
+                lbl_pageTitle.Text = "Cocomo II";
+                cocomo2.Closed += (s, args) => 
+                {
+                    lbl_pageTitle.Text = "Home";
+                    pnl_main.Controls.Clear();
+                };
+
+                cocomo2.TopLevel = false;
+                cocomo2.Dock = DockStyle.Fill;
+                pnl_main.Controls.Add(cocomo2);
+                cocomo2.Show();
+
+                ActivateButton(sender);
+            }
         }
 
         private void btn_manual_Click(object sender, EventArgs e)
         {
+            
+
             ActivateButton(sender);
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            FormCollection fc = Application.OpenForms;
+
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "frm_cocomo2" || frm.Name == "frm_cocomo1")
+                {
+                    DialogResult dr = MessageBox.Show("Are you sure want to close the application?", "Close application", MessageBoxButtons.YesNo);
+
+                    if (dr == DialogResult.Yes)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+
             ActivateButton(sender);
+            this.Close();
         }
     }
 }
