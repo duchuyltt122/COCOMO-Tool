@@ -24,6 +24,7 @@ namespace COCOMO
             {3.0, 1.12, 2.5, 0.35 },
             {2.8, 1.2, 2.5, 0.32 }
         };
+
         double[,] tableCostDrivers =
         {
             { 0.75, 0.88, 1.00, 1.15, 1.4, 0 },
@@ -313,6 +314,9 @@ namespace COCOMO
 
         private void frm_main_Load(object sender, EventArgs e)
         {
+            //Turn off form border
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
             for(int i = 0; i < listNameRating.Length; i++)
             {
