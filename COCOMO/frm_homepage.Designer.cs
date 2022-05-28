@@ -56,7 +56,7 @@ namespace COCOMO
             this.pnl_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_menu.Location = new System.Drawing.Point(0, 0);
             this.pnl_menu.Name = "pnl_menu";
-            this.pnl_menu.Size = new System.Drawing.Size(220, 711);
+            this.pnl_menu.Size = new System.Drawing.Size(220, 761);
             this.pnl_menu.TabIndex = 0;
             // 
             // btn_exit
@@ -68,11 +68,11 @@ namespace COCOMO
             this.btn_exit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(0, 651);
+            this.btn_exit.Location = new System.Drawing.Point(0, 701);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_exit.Size = new System.Drawing.Size(220, 60);
-            this.btn_exit.TabIndex = 5;
+            this.btn_exit.TabIndex = 3;
             this.btn_exit.Text = "    Exit";
             this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -92,7 +92,7 @@ namespace COCOMO
             this.btn_manual.Name = "btn_manual";
             this.btn_manual.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_manual.Size = new System.Drawing.Size(220, 60);
-            this.btn_manual.TabIndex = 4;
+            this.btn_manual.TabIndex = 2;
             this.btn_manual.Text = "  Manual";
             this.btn_manual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_manual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -112,7 +112,7 @@ namespace COCOMO
             this.btn_cocomo2.Name = "btn_cocomo2";
             this.btn_cocomo2.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_cocomo2.Size = new System.Drawing.Size(220, 60);
-            this.btn_cocomo2.TabIndex = 3;
+            this.btn_cocomo2.TabIndex = 1;
             this.btn_cocomo2.Text = "   Cocomo II";
             this.btn_cocomo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cocomo2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -132,7 +132,7 @@ namespace COCOMO
             this.btn_cocomo1.Name = "btn_cocomo1";
             this.btn_cocomo1.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_cocomo1.Size = new System.Drawing.Size(220, 60);
-            this.btn_cocomo1.TabIndex = 2;
+            this.btn_cocomo1.TabIndex = 0;
             this.btn_cocomo1.Text = "    Cocomo I";
             this.btn_cocomo1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cocomo1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -166,8 +166,8 @@ namespace COCOMO
             this.pnl_main.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_main.Location = new System.Drawing.Point(220, 80);
             this.pnl_main.Name = "pnl_main";
-            this.pnl_main.Size = new System.Drawing.Size(790, 631);
-            this.pnl_main.TabIndex = 1;
+            this.pnl_main.Size = new System.Drawing.Size(790, 681);
+            this.pnl_main.TabIndex = 4;
             // 
             // pnl_titleBar
             // 
@@ -196,13 +196,14 @@ namespace COCOMO
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1010, 711);
+            this.ClientSize = new System.Drawing.Size(1010, 761);
             this.Controls.Add(this.pnl_titleBar);
             this.Controls.Add(this.pnl_main);
             this.Controls.Add(this.pnl_menu);
             this.MaximizeBox = false;
             this.Name = "frm_homepage";
             this.Text = "COCOMO Tool";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_homepage_FormClosed);
             this.Load += new System.EventHandler(this.frm_homepage_Load);
             this.pnl_menu.ResumeLayout(false);
             this.pnl_logo.ResumeLayout(false);

@@ -244,15 +244,68 @@ namespace COCOMO
 
         private void frm_cocomo2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frm_mainn main = new frm_mainn();
-            main.Show();
-            
+            //frm_mainn main = new frm_mainn();
+            //main.Show();
         }
 
         private void frm_cocomo2_Load(object sender, EventArgs e)
         {
             //Turn off form border
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
+
+        private void txt_costperPM_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure want to close the current form?", "Close form", MessageBoxButtons.YesNo);
+
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            //Reset textbox
+            txt_size.Text = "0";
+            txt_costperPM.Text = "0";
+            txt_effort.Text = "";
+            txt_schedule.Text = "";
+            txt_cost.Text = "";
+            txt_eaf.Text = "";
+
+            //Reset combobox
+            cb_prec.Text = "Nominal";
+            cb_flex.Text = "Nominal";
+            cb_resl.Text = "Nominal";
+            cb_team.Text = "Nominal";
+            cb_pmat.Text = "Nominal";
+
+            cb_rely.Text = "Nominal";
+            cb_data.Text = "Nominal";
+            cb_cplx.Text = "Nominal";
+            cb_ruse.Text = "Nominal";
+            cb_docu.Text = "Nominal";
+
+            cb_time.Text = "Nominal";
+            cb_stor.Text = "Nominal";
+            cb_pvol.Text = "Nominal";
+
+            cb_acap.Text = "Nominal";
+            cb_aexp.Text = "Nominal";
+            cb_pcap.Text = "Nominal";
+            cb_pexp.Text = "Nominal";
+            cb_ltexp.Text = "Nominal";
+            cb_pcon.Text = "Nominal";
+
+            cb_tool.Text = "Nominal";
+            cb_sced.Text = "Nominal";
+            cb_site.Text = "Nominal";
         }
 
         void calScaleExponent()

@@ -204,5 +204,10 @@ namespace COCOMO
             ActivateButton(sender);
             this.Close();
         }
+
+        private void frm_homepage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
     }
 }

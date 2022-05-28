@@ -309,7 +309,6 @@ namespace COCOMO
         {
             //frm_mainn main=new frm_mainn();
             //main.Show();
-            
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -320,6 +319,37 @@ namespace COCOMO
             {
                 this.Close();
             }
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            //Reset mode
+            radio_org.Checked = true;
+
+            //Reset textbox
+            txt_size.Text = "0";
+            txt_costperPM.Text = "0";
+            txt_effort.Text = "";
+            txt_schedule.Text = "";
+            txt_cost.Text = "";
+            txt_eaf.Text = "";
+
+            //Reset combobox
+            cb_rely.Text = "Nominal";
+            cb_data.Text = "Nominal";
+            cb_cplx.Text = "Nominal";
+            cb_time.Text = "Nominal";
+            cb_stor.Text = "Nominal";
+            cb_virt.Text = "Nominal";
+            cb_turn.Text = "Nominal";
+            cb_modp.Text = "Nominal";
+            cb_tool.Text = "Nominal";
+            cb_sced.Text = "Nominal";
+            cb_acap.Text = "Nominal";
+            cb_aexp.Text = "Nominal";
+            cb_pcap.Text = "Nominal";
+            cb_vexp.Text = "Nominal";
+            cb_lexp.Text = "Nominal";
         }
 
         private void frm_main_Load(object sender, EventArgs e)

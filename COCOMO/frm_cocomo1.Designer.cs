@@ -116,7 +116,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(810, 640);
+            this.panel1.Size = new System.Drawing.Size(810, 683);
             this.panel1.TabIndex = 0;
             // 
             // btn_reset
@@ -130,14 +130,15 @@
             this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reset.ForeColor = System.Drawing.Color.White;
-            this.btn_reset.Location = new System.Drawing.Point(444, 425);
+            this.btn_reset.Location = new System.Drawing.Point(444, 429);
             this.btn_reset.Margin = new System.Windows.Forms.Padding(2);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(116, 32);
-            this.btn_reset.TabIndex = 53;
+            this.btn_reset.TabIndex = 21;
             this.btn_reset.Text = "Reset";
             this.btn_reset.TextColor = System.Drawing.Color.White;
             this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // gb_projectFactors
             // 
@@ -198,11 +199,11 @@
             "Nominal",
             "High",
             "Very High"});
-            this.cb_modp.Location = new System.Drawing.Point(179, 18);
+            this.cb_modp.Location = new System.Drawing.Point(178, 18);
             this.cb_modp.Margin = new System.Windows.Forms.Padding(2);
             this.cb_modp.Name = "cb_modp";
             this.cb_modp.Size = new System.Drawing.Size(116, 21);
-            this.cb_modp.TabIndex = 38;
+            this.cb_modp.TabIndex = 8;
             this.cb_modp.Text = "Nominal";
             this.cb_modp.SelectedIndexChanged += new System.EventHandler(this.cb_modp_SelectedIndexChanged);
             // 
@@ -216,11 +217,11 @@
             "Nominal",
             "High",
             "Very High"});
-            this.cb_tool.Location = new System.Drawing.Point(179, 50);
+            this.cb_tool.Location = new System.Drawing.Point(177, 50);
             this.cb_tool.Margin = new System.Windows.Forms.Padding(2);
             this.cb_tool.Name = "cb_tool";
             this.cb_tool.Size = new System.Drawing.Size(116, 21);
-            this.cb_tool.TabIndex = 41;
+            this.cb_tool.TabIndex = 9;
             this.cb_tool.Text = "Nominal";
             this.cb_tool.SelectedIndexChanged += new System.EventHandler(this.cb_tool_SelectedIndexChanged);
             // 
@@ -234,11 +235,11 @@
             "Nominal",
             "High",
             "Very High"});
-            this.cb_sced.Location = new System.Drawing.Point(179, 79);
+            this.cb_sced.Location = new System.Drawing.Point(177, 79);
             this.cb_sced.Margin = new System.Windows.Forms.Padding(2);
             this.cb_sced.Name = "cb_sced";
             this.cb_sced.Size = new System.Drawing.Size(116, 21);
-            this.cb_sced.TabIndex = 29;
+            this.cb_sced.TabIndex = 10;
             this.cb_sced.Text = "Nominal";
             this.cb_sced.SelectedIndexChanged += new System.EventHandler(this.cb_sced_SelectedIndexChanged);
             // 
@@ -272,7 +273,7 @@
             this.txt_costperPM.Margin = new System.Windows.Forms.Padding(2);
             this.txt_costperPM.Name = "txt_costperPM";
             this.txt_costperPM.Size = new System.Drawing.Size(115, 20);
-            this.txt_costperPM.TabIndex = 44;
+            this.txt_costperPM.TabIndex = 19;
             this.txt_costperPM.Text = "0";
             // 
             // gb_flatformFactors
@@ -288,7 +289,7 @@
             this.gb_flatformFactors.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_flatformFactors.Location = new System.Drawing.Point(99, 171);
             this.gb_flatformFactors.Name = "gb_flatformFactors";
-            this.gb_flatformFactors.Size = new System.Drawing.Size(309, 180);
+            this.gb_flatformFactors.Size = new System.Drawing.Size(310, 180);
             this.gb_flatformFactors.TabIndex = 50;
             this.gb_flatformFactors.TabStop = false;
             this.gb_flatformFactors.Text = "Platform Factors";
@@ -306,7 +307,7 @@
             this.cb_time.Margin = new System.Windows.Forms.Padding(2);
             this.cb_time.Name = "cb_time";
             this.cb_time.Size = new System.Drawing.Size(116, 21);
-            this.cb_time.TabIndex = 39;
+            this.cb_time.TabIndex = 4;
             this.cb_time.Text = "Nominal";
             this.cb_time.SelectedIndexChanged += new System.EventHandler(this.cb_time_SelectedIndexChanged);
             // 
@@ -345,7 +346,7 @@
             this.cb_stor.Margin = new System.Windows.Forms.Padding(2);
             this.cb_stor.Name = "cb_stor";
             this.cb_stor.Size = new System.Drawing.Size(116, 21);
-            this.cb_stor.TabIndex = 34;
+            this.cb_stor.TabIndex = 5;
             this.cb_stor.Text = "Nominal";
             this.cb_stor.SelectedIndexChanged += new System.EventHandler(this.cb_stor_SelectedIndexChanged);
             // 
@@ -369,11 +370,11 @@
             "Nominal",
             "High",
             "Very High"});
-            this.cb_virt.Location = new System.Drawing.Point(177, 86);
+            this.cb_virt.Location = new System.Drawing.Point(178, 86);
             this.cb_virt.Margin = new System.Windows.Forms.Padding(2);
             this.cb_virt.Name = "cb_virt";
             this.cb_virt.Size = new System.Drawing.Size(116, 21);
-            this.cb_virt.TabIndex = 30;
+            this.cb_virt.TabIndex = 6;
             this.cb_virt.Text = "Nominal";
             this.cb_virt.SelectedIndexChanged += new System.EventHandler(this.cb_virt_SelectedIndexChanged);
             // 
@@ -401,7 +402,7 @@
             this.cb_turn.Margin = new System.Windows.Forms.Padding(2);
             this.cb_turn.Name = "cb_turn";
             this.cb_turn.Size = new System.Drawing.Size(116, 21);
-            this.cb_turn.TabIndex = 42;
+            this.cb_turn.TabIndex = 7;
             this.cb_turn.Text = "Nominal";
             this.cb_turn.SelectedIndexChanged += new System.EventHandler(this.cb_turn_SelectedIndexChanged);
             // 
@@ -494,7 +495,7 @@
             this.cb_acap.Margin = new System.Windows.Forms.Padding(2);
             this.cb_acap.Name = "cb_acap";
             this.cb_acap.Size = new System.Drawing.Size(116, 21);
-            this.cb_acap.TabIndex = 37;
+            this.cb_acap.TabIndex = 14;
             this.cb_acap.Text = "Nominal";
             this.cb_acap.SelectedIndexChanged += new System.EventHandler(this.cb_acap_SelectedIndexChanged);
             // 
@@ -512,7 +513,7 @@
             this.cb_aexp.Margin = new System.Windows.Forms.Padding(2);
             this.cb_aexp.Name = "cb_aexp";
             this.cb_aexp.Size = new System.Drawing.Size(116, 21);
-            this.cb_aexp.TabIndex = 33;
+            this.cb_aexp.TabIndex = 15;
             this.cb_aexp.Text = "Nominal";
             this.cb_aexp.SelectedIndexChanged += new System.EventHandler(this.cb_aexp_SelectedIndexChanged);
             // 
@@ -530,7 +531,7 @@
             this.cb_pcap.Margin = new System.Windows.Forms.Padding(2);
             this.cb_pcap.Name = "cb_pcap";
             this.cb_pcap.Size = new System.Drawing.Size(116, 21);
-            this.cb_pcap.TabIndex = 28;
+            this.cb_pcap.TabIndex = 16;
             this.cb_pcap.Text = "Nominal";
             this.cb_pcap.SelectedIndexChanged += new System.EventHandler(this.cb_pcap_SelectedIndexChanged);
             // 
@@ -547,7 +548,7 @@
             this.cb_vexp.Margin = new System.Windows.Forms.Padding(2);
             this.cb_vexp.Name = "cb_vexp";
             this.cb_vexp.Size = new System.Drawing.Size(116, 21);
-            this.cb_vexp.TabIndex = 36;
+            this.cb_vexp.TabIndex = 17;
             this.cb_vexp.Text = "Nominal";
             this.cb_vexp.SelectedIndexChanged += new System.EventHandler(this.cb_vexp_SelectedIndexChanged);
             // 
@@ -564,7 +565,7 @@
             this.cb_lexp.Margin = new System.Windows.Forms.Padding(2);
             this.cb_lexp.Name = "cb_lexp";
             this.cb_lexp.Size = new System.Drawing.Size(116, 21);
-            this.cb_lexp.TabIndex = 32;
+            this.cb_lexp.TabIndex = 18;
             this.cb_lexp.Text = "Nominal";
             this.cb_lexp.SelectedIndexChanged += new System.EventHandler(this.cb_lexp_SelectedIndexChanged);
             // 
@@ -585,11 +586,11 @@
             // 
             this.radio_emb.AutoSize = true;
             this.radio_emb.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_emb.Location = new System.Drawing.Point(19, 79);
+            this.radio_emb.Location = new System.Drawing.Point(18, 76);
             this.radio_emb.Margin = new System.Windows.Forms.Padding(2);
             this.radio_emb.Name = "radio_emb";
             this.radio_emb.Size = new System.Drawing.Size(119, 17);
-            this.radio_emb.TabIndex = 2;
+            this.radio_emb.TabIndex = 13;
             this.radio_emb.Text = "Embedded Mode";
             this.radio_emb.UseVisualStyleBackColor = true;
             // 
@@ -602,7 +603,7 @@
             this.radio_org.Margin = new System.Windows.Forms.Padding(2);
             this.radio_org.Name = "radio_org";
             this.radio_org.Size = new System.Drawing.Size(104, 17);
-            this.radio_org.TabIndex = 0;
+            this.radio_org.TabIndex = 11;
             this.radio_org.TabStop = true;
             this.radio_org.Text = "Organic Mode";
             this.radio_org.UseVisualStyleBackColor = true;
@@ -611,11 +612,11 @@
             // 
             this.radio_semi.AutoSize = true;
             this.radio_semi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_semi.Location = new System.Drawing.Point(19, 49);
+            this.radio_semi.Location = new System.Drawing.Point(18, 46);
             this.radio_semi.Margin = new System.Windows.Forms.Padding(2);
             this.radio_semi.Name = "radio_semi";
             this.radio_semi.Size = new System.Drawing.Size(144, 17);
-            this.radio_semi.TabIndex = 1;
+            this.radio_semi.TabIndex = 12;
             this.radio_semi.Text = "Semi-detached Mode";
             this.radio_semi.UseVisualStyleBackColor = true;
             // 
@@ -650,7 +651,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 51);
+            this.label6.Location = new System.Drawing.Point(16, 48);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 13);
@@ -661,7 +662,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 81);
+            this.label9.Location = new System.Drawing.Point(16, 78);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 13);
@@ -682,7 +683,7 @@
             this.cb_rely.Margin = new System.Windows.Forms.Padding(2);
             this.cb_rely.Name = "cb_rely";
             this.cb_rely.Size = new System.Drawing.Size(116, 21);
-            this.cb_rely.TabIndex = 40;
+            this.cb_rely.TabIndex = 1;
             this.cb_rely.Text = "Nominal";
             this.cb_rely.SelectedIndexChanged += new System.EventHandler(this.cb_rely_SelectedIndexChanged);
             // 
@@ -695,11 +696,11 @@
             "Nominal",
             "High",
             "Very High"});
-            this.cb_data.Location = new System.Drawing.Point(179, 48);
+            this.cb_data.Location = new System.Drawing.Point(179, 45);
             this.cb_data.Margin = new System.Windows.Forms.Padding(2);
             this.cb_data.Name = "cb_data";
             this.cb_data.Size = new System.Drawing.Size(116, 21);
-            this.cb_data.TabIndex = 35;
+            this.cb_data.TabIndex = 2;
             this.cb_data.Text = "Nominal";
             this.cb_data.SelectedIndexChanged += new System.EventHandler(this.cb_data_SelectedIndexChanged);
             // 
@@ -714,11 +715,11 @@
             "High",
             "Very High",
             "Extra High"});
-            this.cb_cplx.Location = new System.Drawing.Point(178, 78);
+            this.cb_cplx.Location = new System.Drawing.Point(178, 75);
             this.cb_cplx.Margin = new System.Windows.Forms.Padding(2);
             this.cb_cplx.Name = "cb_cplx";
             this.cb_cplx.Size = new System.Drawing.Size(116, 21);
-            this.cb_cplx.TabIndex = 31;
+            this.cb_cplx.TabIndex = 3;
             this.cb_cplx.Text = "Nominal";
             this.cb_cplx.SelectedIndexChanged += new System.EventHandler(this.cb_cplx_SelectedIndexChanged);
             // 
@@ -728,7 +729,7 @@
             this.txt_size.Margin = new System.Windows.Forms.Padding(2);
             this.txt_size.Name = "txt_size";
             this.txt_size.Size = new System.Drawing.Size(117, 20);
-            this.txt_size.TabIndex = 45;
+            this.txt_size.TabIndex = 0;
             this.txt_size.Text = "0";
             // 
             // panel2
@@ -748,7 +749,7 @@
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 498);
+            this.panel2.Location = new System.Drawing.Point(0, 541);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(810, 142);
@@ -769,7 +770,7 @@
             this.btn_back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(117, 32);
-            this.btn_back.TabIndex = 54;
+            this.btn_back.TabIndex = 27;
             this.btn_back.Text = "Back";
             this.btn_back.TextColor = System.Drawing.Color.White;
             this.btn_back.UseVisualStyleBackColor = false;
@@ -790,7 +791,7 @@
             this.btn_export.Margin = new System.Windows.Forms.Padding(2);
             this.btn_export.Name = "btn_export";
             this.btn_export.Size = new System.Drawing.Size(116, 32);
-            this.btn_export.TabIndex = 47;
+            this.btn_export.TabIndex = 26;
             this.btn_export.Text = "Export Excel File";
             this.btn_export.TextColor = System.Drawing.Color.White;
             this.btn_export.UseVisualStyleBackColor = false;
@@ -804,7 +805,7 @@
             this.txt_cost.Name = "txt_cost";
             this.txt_cost.ReadOnly = true;
             this.txt_cost.Size = new System.Drawing.Size(134, 20);
-            this.txt_cost.TabIndex = 44;
+            this.txt_cost.TabIndex = 24;
             // 
             // txt_schedule
             // 
@@ -814,7 +815,7 @@
             this.txt_schedule.Name = "txt_schedule";
             this.txt_schedule.ReadOnly = true;
             this.txt_schedule.Size = new System.Drawing.Size(134, 20);
-            this.txt_schedule.TabIndex = 44;
+            this.txt_schedule.TabIndex = 23;
             // 
             // txt_eaf
             // 
@@ -824,7 +825,7 @@
             this.txt_eaf.Name = "txt_eaf";
             this.txt_eaf.ReadOnly = true;
             this.txt_eaf.Size = new System.Drawing.Size(117, 20);
-            this.txt_eaf.TabIndex = 44;
+            this.txt_eaf.TabIndex = 25;
             // 
             // txt_effort
             // 
@@ -834,7 +835,7 @@
             this.txt_effort.Name = "txt_effort";
             this.txt_effort.ReadOnly = true;
             this.txt_effort.Size = new System.Drawing.Size(134, 20);
-            this.txt_effort.TabIndex = 44;
+            this.txt_effort.TabIndex = 22;
             // 
             // label7
             // 
@@ -929,11 +930,11 @@
             this.btn_cal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cal.ForeColor = System.Drawing.Color.White;
-            this.btn_cal.Location = new System.Drawing.Point(604, 425);
+            this.btn_cal.Location = new System.Drawing.Point(604, 429);
             this.btn_cal.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cal.Name = "btn_cal";
             this.btn_cal.Size = new System.Drawing.Size(116, 32);
-            this.btn_cal.TabIndex = 5;
+            this.btn_cal.TabIndex = 20;
             this.btn_cal.Text = "Calculate";
             this.btn_cal.TextColor = System.Drawing.Color.White;
             this.btn_cal.UseVisualStyleBackColor = false;
@@ -944,7 +945,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(810, 640);
+            this.ClientSize = new System.Drawing.Size(810, 683);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_cocomo1";
