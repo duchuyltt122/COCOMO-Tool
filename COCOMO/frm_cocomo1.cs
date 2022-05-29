@@ -303,6 +303,10 @@ namespace COCOMO
                     workbook.Save(saveFileDialog.FileName);
                 }
             }
+            else
+            {
+                MessageBox.Show("Please calculate before export excel file!");
+            }
         }
 
         private void frm_cocomo1_FormClosing(object sender, FormClosingEventArgs e)
@@ -441,12 +445,12 @@ namespace COCOMO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("All inputs must be filled out >= 0");
+                MessageBox.Show("All inputs must be filled out >= 0 and <=1000000");
                 return;
             }
-            if(costperPM < 0 || KLOC < 0)
+            if(costperPM < 0 || KLOC < 0 || costperPM > 1000000 || KLOC > 1000000)
             {
-                MessageBox.Show("All inputs must be filled out >= 0");
+                MessageBox.Show("All inputs must be filled out >= 0 and <=1000000");
                 return;
             }
             checkClickCalculate=true;
